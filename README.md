@@ -131,7 +131,7 @@ ____________________
 
 ### ✅ Projeto Finalizado
 
-(link)
+( link )
 
 
 ### 📈📏 Pitch TCC
