@@ -177,5 +177,13 @@ ____________________
 TCC - Trabalho de Conclusão de Curso 2021
 
 #### ❤ Agradecimentos Especiais: 
-Os seus ensinamentos foram muito além dos conteúdos. Tivemos aprendizados importantes para a vida. A sua missão vai muito além da missão de um professor, você é um verdadeiro mestre. Você soube despertar a nossa admiração de um modo único, e se tornou uma inspiração para nós.
-Átila, Hebert e Gal.
+
+•	Os seus ensinamentos foram muito além dos conteúdos. Tivemos aprendizados importantes para a vida. A sua missão vai muito além da missão de um professor, você é um verdadeiro mestre. Você soube despertar a nossa admiração de um modo único, e se tornou uma inspiração para nós. Muito obrigada (o), por tudo professores: Átila, Hebert e Gal.
+
+•	Obrigada(o) pela ajuda na revisão do TCC a esposa do Professor Átila, Mônica. 
+
+
+•	Agradecemos a todos da Escola SENAI Suíço-Brasileira "Paulo Ernesto Tolle", por nos proporcionar esse curso, que é de extrema importância para o nosso conhecimento, jamais iremos esquecer dessa unidade expendida!
+
+
+
