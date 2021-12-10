@@ -32,43 +32,38 @@ ____________________
 - [x] Avaliação do processo e estrutura atual.
 - [x] Ideias de melhorias e otimização do processo.
 - [x] Definição das Squads.
-- [x] Organização das tabelas e planilhas.
-- [x] Wireframe da aplicação e desenho no Figma.
+- [x] Planejamento da arquitetura da aplicação.
+- [x] Prototipação da aplicação - Wireframe.
 - [x] Apresentação da proposta do novo sistema reprográfico para o cliente.
 - [x] Construção da aplicação em conjunto e definição das tecnologias.
-- [x] Desenho e estrutura do banco de dados.
-- [x] Criaçao do Front-end.
-- [x] Definição das tecnologias usadas no Back-end e construção dos códigos.
-- [x] Integração Front-end e Banco de dados com o Back-end.
+- [x] Modelagem conceitual, lógica e física, do Banco de Dados.
+- [x] Criação do Front-end.
+- [x] Definição das tecnologias usadas no Back-end e implementação dos códigos.
+- [x] Integração: Front-end, Banco de dados e Back-end.
+- [ ] Fase de testes do projeto concluído. 
 - [x] Resolver bugs e possíveis problemas futuros.
 - [x] Deploy.
-- [ ] Infraestrutura na nuvem - Rede SENAI.
-- [ ] Fase de teste.
+- [x] Infraestrutura na nuvem - Rede SENAI.
 - [ ] Projeto Finalizado.
 - [ ] Conclusão TCC. 
 - [x] Criação do Pitch.
-- [ ] Apresentação do projeto pronto para o professor/orientador.
+- [ ] Apresentação do projeto concluído para o professor/orientador e convidados.
 - [ ] Avaliação e monitoramento.
 - [ ] Apresentação do projeto final para o cliente.
 
 
-### ✍ Organização das Squads:
-____________________
 
+### ✍ Metodologia ultilizada no Projeto
 - [x] Metodologia Ágil: SCRUM.
-- [x] Daily com os Tech Leads.
-- [x] Trello.
-- [x] Definição de prazos.
-- [x] Monitoramento do Trello de cada Squad.
 
 
-### 🛠 Ferramentas necessárias:
+### 🛠 Ferramentas ultilizadas:
 ____________________
 
 - [x] [Trello](https://trello.com/)
 - [x] [Figma](https://www.figma.com/)
 - [x] [Visual Studio Code](https://code.visualstudio.com/)
-- [x] [Rect JS](https://reactjs.org/)
+- [x] [ReactJS](https://reactjs.org/)
 - [x] [XAMPP](https://www.apachefriends.org/pt_br/index.html)
 - [x] [Workbench](https://www.mysql.com/products/workbench/)
 - [x] [Lucidchart](https://www.lucidchart.com/pages/pt)
@@ -107,15 +102,8 @@ ____________________
 
 
 
-
-
-
-
 ### ✏ front-end: 
     se organizaram pelo trello, o objetivo dessa squad era realizar o prótótipo e garantir todas as funcionalidades do projeto.
-
-
-
 
 
 
