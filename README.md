@@ -64,11 +64,12 @@ ____________________
 - [x] [Figma](https://www.figma.com/)
 - [x] [Visual Studio Code](https://code.visualstudio.com/)
 - [x] [ReactJS](https://reactjs.org/)
-- [x] [XAMPP](https://www.apachefriends.org/pt_br/index.html)
+- [x] [XAMPP](https://www.apachefriends.org/pt_br/dowload.html)
+- [x] [MySQL](https://www.mysql.com/dowloads/)
 - [x] [Workbench](https://www.mysql.com/products/workbench/)
 - [x] [Lucidchart](https://www.lucidchart.com/pages/pt)
 - [x] [Sequelize](https://sequelize.org/)
-- [x] [Node JS](https://nodejs.org/pt-br/download/)
+- [x] [NodeJS](https://nodejs.org/pt-br/download/)
 - [x] [Azure](https://azure.microsoft.com/pt-br/)
 
 ### 📋 Trello
@@ -97,22 +98,24 @@ ____________________
 
 
 ### ✏ Back-end: 
-    Se organizaram pelo trello, ficaram responsáveis pela criação de wireframes,
-    porém ao longo do projeto se juntaram com front para a relização do projeto.
+   Squad responsável pela definição da arquitetura da aplicação, modelagem do sistema, implementação dos códigos, integração com Banco de Dados e fase de tetes. 
 
 
-
-### ✏ front-end: 
-    se organizaram pelo trello, o objetivo dessa squad era realizar o prótótipo e garantir todas as funcionalidades do projeto.
+### ✏ Front-end: 
+    Squad responsável pelo planejamento da interface do usuário bem como, a programação visual e fase de testes do mesmo. 
 
 
 
 ### ✏ Infra: 
-    ultilizaram o trello, e ficaram responsáveis pela parte de teste, colocar no servirdor.
+    Squad responsável pela topologia lógica e infraestutura para rodar a aplicação. 
+
+
+### ✏ Banco de Dados: 
+    Squad responsável pela modelagem conceitual, lógica e física do banco de dados da aplicação.
 
 
 ### ✏ Projetos: 
-    Ultilizaram o trello, ficaram resposáveis pelo monitoramento do projeto e entrega do tcc.
+    Squad responsável pelo gerenciamento do projeto, em todas as suas fases.
 
 
 
