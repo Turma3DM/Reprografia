@@ -32,7 +32,7 @@ ____________________
 - [x] Avaliação do processo e estrutura atual.
 - [x] Ideias de melhorias e otimização do processo.
 - [x] Definição das Squads.
-- [x] Desenho da aplicação, organização das tabelas e planilhas.
+- [x] Organização das tabelas e planilhas.
 - [x] Wireframe da aplicação e desenho no Figma.
 - [x] Apresentação da proposta do novo sistema reprográfico para o cliente.
 - [x] Construção da aplicação em conjunto e definição das tecnologias.
