@@ -9,9 +9,9 @@ _______
 ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white)
 ![Azure](https://img.shields.io/twitter/url?color=%230078D4&label=Microsoft%20Azure&logo=Microsoft%20Azure&logoColor=%230078D4&style=flat-square&url=https%3A%2F%2Fwww.w3schools.com%2F)
 
-### SENAI Suiço-Brasileira Paulo "Ernesto Tolle"
+### SENAI Suíço-Brasileira "Paulo Ernesto Tolle"
 
-Sistema que visa ajugar nas solicitações reprográficas da escola SENAI Suiço-Brasileira Paulo E. Tolle com o intuito de deixar o processo antigo mais automatizado, rápido e eficiênte. 
+Sistema que visa ajudar nas solicitações reprográficas da escola SENAI Suiço-Brasileira Paulo E. Tolle com o intuito de deixar o processo antigo mais automatizado, rápido e eficiênte. 
 
 ### ⚠ Problemas observados:
 ____________________
