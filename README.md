@@ -28,7 +28,7 @@ O sistema visa implementar a inteligência no procedimento trazendo melhor usabi
 ____________________
 
 - [x] Identificação do problema.
-- [x] Entrevista com a diretoria.
+- [x] Entrevista com a gerente administrativa e financeira da unidade. 
 - [x] Avaliação do processo e estrutura atual.
 - [x] Ideias de melhorias e otimização do processo.
 - [x] Definição das Squads.
