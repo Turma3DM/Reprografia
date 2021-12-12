@@ -97,24 +97,23 @@ ____________________
 
 
 
-### ✏ Back-end: 
+### ⚙️ Back-end: 
    Squad responsável pela definição da arquitetura da aplicação, modelagem do sistema, implementação dos códigos, integração com Banco de Dados e fase de tetes. 
 
 
-### ✏ Front-end: 
+### 💻 Front-end: 
     Squad responsável pelo planejamento da interface do usuário bem como, a programação visual e fase de testes do mesmo. 
 
 
-
-### ✏ Infra: 
+### ☁️ Infra: 
     Squad responsável pela topologia lógica e infraestutura para rodar a aplicação. 
 
 
-### ✏ Banco de Dados: 
+### 🎲 Banco de Dados: 
     Squad responsável pela modelagem conceitual, lógica e física do banco de dados da aplicação.
 
 
-### ✏ Projetos: 
+### 📊 Projetos: 
     Squad responsável pelo gerenciamento do projeto, em todas as suas fases.
 
 
