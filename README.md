@@ -125,7 +125,7 @@ ____________________
 
 
 ### 📈📏 Pitch TCC
-![image](https://user-images.githubusercontent.com/71889111/145204542-c5c4d625-dda2-4d27-813a-94fd78996daa.png)
+![image](https://user-images.githubusercontent.com/95756600/145725928-fef6d077-60f7-416b-bc77-562d1686fa0a.png)
 
 
 
