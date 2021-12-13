@@ -73,8 +73,8 @@ ____________________
 - [x] [Azure](https://azure.microsoft.com/pt-br/)
 
 ### 📋 Trello
-
 https://trello.com/b/kpDSyp87/acompanhamento-das-squads
+
 
 ### 🖌 Criação no FIGMA: 
 ____________________
