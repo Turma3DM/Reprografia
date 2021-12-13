@@ -40,16 +40,16 @@ ____________________
 - [x] Criação do Front-end.
 - [x] Definição das tecnologias usadas no Back-end e implementação dos códigos.
 - [x] Integração: Front-end, Banco de dados e Back-end.
-- [ ] Fase de testes do projeto concluído. 
+- [x] Fase de testes do projeto concluído. 
 - [x] Resolver bugs e possíveis problemas futuros.
 - [x] Deploy.
 - [x] Infraestrutura na nuvem - Rede SENAI.
-- [ ] Projeto Finalizado.
+- [x] Projeto Finalizado.
 - [ ] Conclusão TCC. 
 - [x] Criação do Pitch.
+- [ ] Apresentação do projeto final para o cliente.
 - [ ] Apresentação do projeto concluído para o professor/orientador e convidados.
 - [ ] Avaliação e monitoramento.
-- [ ] Apresentação do projeto final para o cliente.
 
 
 
@@ -120,8 +120,8 @@ ____________________
 
 
 ### ✅ Projeto Finalizado
+![1 - Pagina de Login](https://user-images.githubusercontent.com/95756600/145804022-21ea81bf-4b7f-40e9-b850-406549937112.png)
 
-( link )
 
 
 ### 📈📏 Pitch TCC
