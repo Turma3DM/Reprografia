@@ -113,7 +113,7 @@ ____________________
     Squad responsável pela modelagem conceitual, lógica e física do banco de dados da aplicação.
 
 
-### 📊 Projetos: 
+### 📊 Projeto: 
     Squad responsável pelo gerenciamento do projeto, em todas as suas fases.
 
 
