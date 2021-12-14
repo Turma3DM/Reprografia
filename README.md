@@ -45,9 +45,9 @@ ____________________
 - [x] Deploy.
 - [x] Infraestrutura na nuvem - Rede SENAI.
 - [x] Projeto Finalizado.
-- [ ] Conclusão TCC. 
+- [x] Conclusão TCC. 
 - [x] Criação do Pitch.
-- [ ] Apresentação do projeto final para o cliente.
+- [x] Apresentação do projeto final para o cliente.
 - [ ] Apresentação do projeto concluído para o professor/orientador e convidados.
 - [ ] Avaliação e monitoramento.
 
