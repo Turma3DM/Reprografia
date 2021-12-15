@@ -1,6 +1,6 @@
 # Sistema reprográfico 📇
 
-[Aplicação rodando no AZURE](http://reprografia-senai.eastus.cloudapp.azure.com/)
+[**Aplicação rodando no AZURE**](http://reprografia-senai.eastus.cloudapp.azure.com/)
 | [GitHub Back-end](https://github.com/Squad-Back-End/reprography-nodejs)
 | [GitHub Front-end](https://github.com/ViictorSR388/reprografia_front-end)
 _______
