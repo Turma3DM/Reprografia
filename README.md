@@ -48,8 +48,8 @@ ____________________
 - [x] Conclusão TCC. 
 - [x] Criação do Pitch.
 - [x] Apresentação do projeto final para o cliente.
-- [ ] Apresentação do projeto concluído para o professor/orientador e convidados.
-- [ ] Avaliação e monitoramento.
+- [x] Apresentação do projeto concluído para o professor/orientador e convidados.
+- [x] Avaliação e monitoramento.
 
 
 
@@ -161,7 +161,7 @@ ____________________
 
 
 ### 📑 Trabalho Concluido: 
-[/////////80%/----] Em andamento
+100% 
 
 
 #### ❣ Projeto realizado pela turma 3DM - Desenvolvimento de Sistemas (Manhã) 
