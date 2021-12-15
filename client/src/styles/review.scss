@@ -1,0 +1,134 @@
+@import "global";
+
+div#main-container {
+  display: flex;
+  width: 70%;
+  height: 100%;
+
+  position: relative;
+  top: 15rem;
+  left: 35rem;
+}
+
+#review-container {
+  width: 100%;
+  max-width: 150rem;
+  height: 57rem;
+  margin-top: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#review-title {
+  background-color: $grey-button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 80rem;
+  height: 4rem;
+  color: aliceblue;
+  margin-bottom: 1rem;
+
+  h3 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+}
+
+#review-content {
+  background-color: #c4c4c4;
+  width: 85%;
+  max-width: 80rem;
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#feedback-radio {
+  display: flex;
+  padding: 2%;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 80rem;
+  height: 4.5rem;
+  background-color: $grey-button;
+}
+
+.radio {
+  width: 17rem;
+  height: 5rem;
+  padding: 2%;
+  min-width: 12rem;
+  display: flex;
+  color: aliceblue;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+div#container-label {
+  display: flex;
+  text-align: center;
+  height: 4.5rem;
+  width: 12rem;
+  text-align: center;
+  padding: 1%;
+}
+
+.checkbox-avaliacao {
+  margin: auto !important;
+}
+
+.title-review {
+  font-size: 1.8rem;
+}
+
+#feedback-text {
+  width: 65rem;
+  margin-top: 5rem;
+  height: 30rem;
+  font-size: 2rem;
+  width: 80%;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+}
+
+button#review-button {
+  background: $grey-button;
+  width: 20rem;
+  height: 3rem;
+  color: aliceblue;
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  border-radius: 0.4rem;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: $grey !important;
+    color: $grey-button !important;
+  }
+}
+
+button#review-button:hover {
+  cursor: pointer;
+}
+
+div#button-review {
+  width: 85%;
+  max-width: 80rem;
+
+  display: flex;
+  justify-content: flex-end;
+}

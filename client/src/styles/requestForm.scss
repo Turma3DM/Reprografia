@@ -1,0 +1,475 @@
+@import "_global.scss";
+
+.containerForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 15rem;
+  left: 55rem;
+
+  .title-repro {
+    text-align: center;
+    background-color: $grey-button;
+    width: 100%;
+    color: $white;
+    height: 4rem;
+    width: 50vw;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .containerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    height: 60rem;
+
+    .card-wrapper {
+      display: flex;
+
+      .cardTitle {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+
+        :nth-child(2) {
+          margin-top: 5vh !important;
+        }
+      }
+
+      .cardTitle-CC {
+        font-size: 2.5rem;
+        margin-bottom: 3vh;
+        margin-top: 9vh;
+
+        :nth-child(2) {
+          margin-top: 5vh !important;
+        }
+      }
+    }
+
+    .upload-form {
+      font-size: 1.5rem !important;
+      width: 17rem !important;
+      background-color: $blue !important;
+      cursor: pointer !important;
+      margin-bottom: 2rem !important;
+      color: $white !important;
+      padding: 0.5rem !important;
+      border-radius: 0.8rem !important;
+      transition: 0.5s !important;
+
+      &:hover {
+        background-color: #04345c !important;
+      }
+    }
+
+    .container-curso {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 3rem;
+
+      .inputCurso {
+        display: flex;
+      }
+    }
+
+    .card {
+      display: flex !important;
+      background-color: $grey !important;
+      flex-direction: column !important;
+      justify-content: start !important;
+      align-items: center !important;
+      text-align: center !important;
+      width: 50vw !important;
+      margin: 0 1rem !important;
+      border-radius: 5px !important;
+
+      .radio-container {
+        display: flex;
+        justify-content: space-between;
+        width: 35vw;
+      }
+      .radioName {
+        margin: 0.8rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+      }
+
+      .select-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10vh;
+        width: 35vw;
+
+        .radioName {
+          margin: 0.8rem 0;
+          display: flex;
+        }
+      }
+
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+
+      .textInput {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        height: 3vh;
+        width: 15vw;
+      }
+
+      .sendTextInput {
+        margin-top: 1.5rem;
+        font-size: 2rem;
+        height: 15vh;
+        width: 18vw;
+        background-color: $white;
+      }
+
+      .step-btn {
+        width: 20vw !important;
+        background-color: $blue !important;
+        border: transparent !important;
+        font-size: 1.5rem !important;
+        margin-top: 2vh !important;
+        margin-bottom: 1rem !important;
+        transition: 0.5s !important;
+
+        &:hover {
+          background-color: #04345c !important;
+        }
+      }
+
+      .step-btn-back {
+        width: 20vw !important;
+        background-color: $blue;
+        border: transparent !important;
+        font-size: 1.5rem !important;
+        margin-top: 2vh !important;
+        margin-bottom: 2rem !important;
+        transition: 0.5s !important;
+
+        &:hover {
+          background-color: #04345c !important;
+        }
+      }
+
+      .select {
+        width: 30vw;
+        font-size: 1.5rem;
+      }
+
+      .label {
+        margin-top: 1rem;
+      }
+
+      .observation {
+        width: 35rem;
+        height: 15rem;
+        margin-top: 2rem;
+      }
+
+      .bootstrap-buttons {
+        width: 25vw !important;
+        display: flex !important;
+        justify-content: space-between !important;
+
+        .functionButton {
+          cursor: pointer !important;
+          border-radius: 8px !important;
+          background-color: $blue !important;
+          color: $white !important;
+          transition: 0.5s !important;
+          font-size: 1.5rem !important;
+          width: 14rem !important;
+          height: 3rem !important;
+          border: none !important;
+
+          &.functionButton:hover {
+            background-color: #04345c !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.labelName-CT {
+  width: 30rem;
+}
+
+.labelName-CA {
+  width: 40rem;
+}
+
+.radioName-Send {
+  display: flex;
+  justify-content: center;
+  width: 50rem;
+  margin-bottom: 1rem;
+}
+
+.labelName-Send {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2rem;
+  width: 20rem;
+}
+
+@media (max-width: 1919px) {
+  .containerForm {
+    top: 20vh;
+    left: 30vw;
+  }
+}
+
+@media (min-width: 951px) and (max-width: 1400px) {
+  .containerForm {
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+
+  .upload-form {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .containerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: inherit;
+    width: 100%;
+
+    .dateCourse {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 1rem;
+
+      .title-repro {
+        height: 100%;
+        width: 100%;
+        word-wrap: break-word;
+        margin-top: 1rem;
+        font-size: 1.6rem;
+      }
+
+      .date {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        border-radius: 5px;
+        z-index: -1;
+
+        label {
+          margin: 1rem 0;
+        }
+
+        input[type="date"] {
+          transform: scale(1.4);
+        }
+      }
+
+      .course {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+        font-size: 2rem;
+        border-radius: 5px;
+        margin-top: 0.7rem;
+        margin-bottom: 3.5rem;
+
+        span {
+          margin-right: 0rem;
+        }
+
+        .cst-curso {
+          margin-right: 0rem;
+        }
+
+        .input-pos {
+          margin-top: 1rem;
+        }
+
+        #pos {
+          margin-top: 1rem;
+          height: 2.5rem;
+          width: 25rem;
+        }
+
+        label {
+          margin-right: 0rem;
+        }
+
+        input {
+          margin-right: 0rem;
+        }
+
+        .radioName {
+          width: 10rem;
+          display: flex;
+          align-items: center;
+          margin: 0.5rem 0;
+
+          input {
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+
+    .containerWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      .card-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35rem;
+        width: 80%;
+        margin: 1rem 0;
+        flex-wrap: wrap;
+        font-size: 2rem;
+
+        .radioName {
+          display: flex;
+          align-items: center;
+          margin: 0.5rem 0;
+
+          input {
+            margin-left: 1rem;
+          }
+        }
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: -0.7rem;
+
+        .cardTitle {
+          margin-top: 1rem;
+        }
+
+        .medium {
+          height: 40rem;
+
+          input[type="text"] {
+            width: 30rem;
+          }
+        }
+      }
+
+      .cardTitle {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+      }
+
+      .text-other {
+        width: 35rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+      }
+
+      .short {
+        font-size: 1.8rem;
+        text-align: center;
+        width: 10rem;
+        height: 2.5rem;
+      }
+
+      /* Chrome, Safari, Edge, Opera */
+      .short::-webkit-outer-spin-button,
+      .short::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      .short {
+        -moz-appearance: textfield;
+      }
+
+      .labelName {
+        margin-bottom: 1rem;
+      }
+
+      input {
+        margin: 0.5rem 0;
+      }
+
+      .contentButton {
+        display: flex;
+        justify-content: space-between;
+        height: 5.5rem;
+        width: 80%;
+
+        .functionButton {
+          cursor: pointer !important;
+          border-radius: 8px !important;
+          background-color: $grey-button !important;
+          color: $white !important;
+          transition: 0.5s !important;
+          font-size: 2rem !important;
+          width: 14rem !important;
+
+          &.functionButton:hover {
+            background-color: $grey;
+            color: $grey-button;
+          }
+        }
+      }
+    }
+  }
+}
+
+textarea.form-control {
+  margin-bottom: 2rem !important;
+  background-color: $grey;
+  color: $grey-button;
+}
+
+textarea.form-control {
+  margin-bottom: 2rem !important;
+}

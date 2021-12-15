@@ -1,0 +1,261 @@
+@import "_global";
+
+.deptoCurso-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: absolute;
+  width: 45%;
+  top: 18vh;
+  left: 33vw;
+  font-size: 2rem;
+  font-weight: 500;
+  flex-wrap: wrap;
+
+  .title-deptoCurso {
+    margin-bottom: 3rem;
+    font-size: 2.7rem;
+    width: 100%;
+    background-color: $grey-button;
+    color: $white;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .btn-disable {
+    display: flex !important;
+    margin: 0 0.5rem !important;
+    padding: 0.5rem !important;
+    flex-direction: column !important;
+    transition: 0.5s !important;
+  }
+
+  .btn-edit {
+    display: flex !important;
+    background-color: $grey-button;
+    color: $white !important;
+    margin: 0 2rem !important;
+    font-size: 1.6rem !important;
+    padding: 0.5rem !important;
+    transition: 0.5s !important;
+
+    &:hover {
+      background-color: $grey !important;
+      color: $grey-button !important;
+    }
+  }
+
+  .curso {
+    margin-top: 5rem;
+  }
+
+  .btn-depto {
+    background-color: $grey-button;
+    color: $white;
+    width: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: auto !important;
+    margin-top: 4rem !important;
+    border-radius: 1rem;
+    transition: 0.5s !important;
+    margin-bottom: 10rem !important;
+
+    &:hover {
+      background-color: $grey !important;
+      color: $grey-button !important;
+    }
+  }
+
+  .btn-enable {
+    display: flex !important;
+    margin: 0 2rem !important;
+    padding: 0.5rem !important;
+    flex-direction: column !important;
+    transition: 0.5s !important;
+  }
+
+  .btns-deptoCurso {
+    position: absolute;
+    margin-top: 40rem;
+    width: 40rem;
+
+    .btn-deptoCurso {
+      background-color: $grey-button;
+      color: $white;
+      width: 50% !important;
+      display: flex !important;
+      justify-content: center !important;
+      margin: auto !important;
+      margin-top: 4rem !important;
+      border-radius: 1rem;
+      transition: 0.5s !important;
+      margin-bottom: 10rem !important;
+
+      &:hover {
+        background-color: $grey !important;
+        color: $grey-button !important;
+      }
+    }
+  }
+}
+
+.btn-tables {
+  display: flex;
+  width: 80rem;
+
+  .btn-boot {
+    justify-content: space-around !important;
+    width: 180rem !important;
+    display: flex !important;
+    margin: 0 2rem !important;
+    padding: 1rem !important;
+    font-size: 2rem !important;
+    flex-direction: column !important;
+    transition: 0.5s !important;
+    background-color: $grey;
+    margin-top: 1.5rem !important;
+    text-align: center !important;
+
+    &:hover {
+      background-color: $grey-button !important;
+      color: $white !important;
+    }
+  }
+}
+
+.table-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80rem;
+  height: 5rem;
+  flex-direction: column;
+  margin-top: 4rem;
+
+  .btn-boot {
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 40rem !important;
+    display: inline-block !important;
+    margin: 0 2rem !important;
+    padding: 1rem !important;
+    font-size: 2rem !important;
+    transition: 0.5s !important;
+    background-color: $grey;
+    margin-top: 1rem !important;
+    text-align: center !important;
+
+    &:first-child {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover {
+      background-color: $grey-button !important;
+      color: $white !important;
+    }
+  }
+}
+
+.table-deptoCurso {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80rem;
+  height: 5rem;
+  margin-top: 4rem;
+
+  .btn-deptoCurso {
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 40rem !important;
+    display: inline-block !important;
+    margin: 0 2rem !important;
+    padding: 1rem !important;
+    font-size: 2rem !important;
+    transition: 0.5s !important;
+    background-color: $grey;
+    margin-top: 1rem !important;
+    text-align: center !important;
+
+    &:first-child {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover {
+      background-color: $grey-button !important;
+      color: $white !important;
+    }
+  }
+}
+
+.table-depto-curso {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80rem;
+  height: 5rem;
+
+  .btn-deptoCurso {
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 40rem !important;
+    display: inline-block !important;
+    margin: 0 2rem !important;
+    padding: 1rem !important;
+    font-size: 2rem !important;
+    transition: 0.5s !important;
+    background-color: $grey;
+    margin-top: 1rem !important;
+    margin-bottom: 5rem !important;
+    text-align: center !important;
+
+    &:first-child {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover {
+      background-color: $grey-button !important;
+      color: $white !important;
+    }
+  }
+}
+
+.deptoAcoes {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 80rem;
+  top: 10rem;
+  left: 35vw;
+  margin: auto;
+  flex-direction: column;
+
+  .title-deptoCurso {
+    display: flex;
+    width: 50%;
+    margin-top: 38rem;
+    justify-content: center;
+    padding: 0.8rem;
+    font-size: 2.7rem;
+  }
+}
+
+.mensagem-deptoCurso {
+  text-align: center;
+  color: $red;
+  margin-top: 4rem;
+  border: none;
+}
+
+.mensagem {
+  margin-top: 1.5rem;
+}

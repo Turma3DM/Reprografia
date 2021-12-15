@@ -1,0 +1,72 @@
+@import "global";
+
+.input-service-ED {
+  border: 1px solid $grey-button;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: auto;
+  height: 3.5rem;
+  width: 38rem;
+  padding-left: 0.5rem;
+}
+
+.nu-send-buttonEDS {
+  width: 40rem;
+  height: 3.5rem;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #4895ef;
+  color: #ffffff;
+  border-radius: 2rem;
+  transition: 0.5s;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: $blue;
+  }
+}
+
+#btn.btn-back-userEDS {
+  width: 40rem;
+  height: 3.5rem;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: $red;
+  color: $white;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #ba181b;
+  }
+}
+
+.input-service-EDS {
+  border: 1px solid $grey-button;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: auto;
+  margin-top: 2rem;
+  height: 3.5rem;
+  width: 38rem;
+  padding-left: 0.5rem;
+}
+
+.title-editService {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}

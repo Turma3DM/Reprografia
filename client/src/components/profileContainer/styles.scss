@@ -1,0 +1,70 @@
+@import "../../styles/global";
+
+.left-container {
+    background-color: $red;
+    position: fixed;
+    width: 35vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.icon-container {
+    background-color: $white;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 17rem;
+    height: 17rem;
+}
+
+.profile-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-image {
+    border: 5px solid #FFF;
+    object-fit: cover;
+}
+
+.subTitle {
+    font-size: 2.5rem;
+    color: $white;
+    margin-top: 7rem;
+}
+
+.senaiLogo {
+    width: 15rem;
+    height: 3.5rem;
+    margin-top: 5rem;
+}
+
+.button-edit{
+    padding: 1rem;
+    font-size: 1.8rem;
+    margin-top: 1vh;
+    border-radius: 50px;
+    color: $white;
+    background-color: $grey-button;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.button-edit:hover{
+    background-color: $white;
+    color: #111;
+}
+
+#propsTitle{
+    margin-bottom: 50px
+}
+
+@media (max-width: 800px) {
+    .left-container {
+        display: none;
+    }
+}

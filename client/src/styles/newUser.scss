@@ -1,0 +1,170 @@
+@import "global";
+
+.content {
+  display: flex;
+  height: 100vh;
+}
+
+.container-newUser {
+  position: absolute;
+  top: 15rem;
+  left: 85rem;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  .radio-typeUser {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.8rem;
+  }
+}
+
+.radioOpcoes {
+  text-align: center !important;
+  margin-top: 1.5rem;
+}
+
+.selectNew {
+  display: flex !important;
+  justify-content: center !important;
+  font-size: 1.5rem !important;
+  border: solid 2px $red !important;
+  padding: 0.5rem !important;
+  width: 38rem !important;
+  margin: auto !important;
+}
+
+.important {
+  color: $red;
+  font-size: 2rem;
+  position: static;
+  margin-right: 0.5rem;
+
+  .input-boxNEW {
+    border: 2px solid $red;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 1.8rem;
+    height: 3.5rem;
+    width: 38rem;
+    padding-left: 0.5rem;
+  }
+}
+
+.input-boxNEW {
+  border: 1px solid #363232;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 1.8rem;
+  height: 3.5rem;
+  width: 38rem;
+  padding-left: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.nu-subTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $grey-button;
+  color: $white;
+  height: 4rem;
+  width: 38rem;
+  margin-bottom: 4.5rem;
+  font-size: 1.8rem;
+}
+
+.btns {
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+
+.nu-send-button {
+  width: 40rem;
+  height: 3.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: $blue;
+  color: $white;
+  border-radius: 2rem;
+  transition: 0.5s;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #04345c;
+  }
+}
+
+#btn.btn-back-user {
+  width: 40rem;
+  height: 3.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: $red;
+  color: $white;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #ba181b;
+  }
+}
+
+.customizeNew:hover {
+  background-color: #fb0404;
+}
+.customizeNew {
+  background-color: #4895ef;
+  width: 100%;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-radius: 16px;
+  border: 0;
+  padding: 0.6rem 12.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.customizeNew .uploudNew {
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+
+.input-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $grey-button;
+  color: $white;
+  height: 2.5rem;
+  width: 40rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}

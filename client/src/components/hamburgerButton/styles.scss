@@ -1,0 +1,87 @@
+@import '../../styles/global';
+
+.navbarH {
+  display: none;
+}
+
+.nav-menu {
+  display: none;
+}
+
+@media (max-width: 1380px) {
+
+  .navbarH {
+    background-color: $red;
+    height: 8rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .menu-bars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+  }
+
+  .nav-menu {
+    background-color: $red;
+    width: 25rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100rem;
+    transition: 850ms;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    transition: 350ms;
+    z-index: 1;
+  }
+
+  .nav-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0.8rem 0rem 0.8rem 1.6rem;
+    list-style: none;
+    height: 6rem;
+  }
+
+  .nav-text a {
+    text-decoration: none;
+    color: $white;
+    font-size: 1.8rem;
+    width: 25rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1.6rem;
+    border-radius: 4px;
+  }
+
+  .nav-text a:hover {
+    background-color: $blue-hover;
+    color: $white;
+  }
+
+  .nav-menu-items {
+    width: 100%;
+  }
+
+  .navbar-toggle {
+    background-color: $red;
+    width: 10rem;
+    height: 8rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  span {
+    margin-left: 1.6rem;
+  }
+}

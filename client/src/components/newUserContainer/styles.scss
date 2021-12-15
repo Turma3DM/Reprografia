@@ -1,0 +1,45 @@
+@import "../../styles/global";
+
+.left-container {
+    background-color: $red;
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon-container {
+    background-color: $white;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 17rem;
+    height: 17rem;
+}
+
+.profileImg {
+    width: 10rem;
+    height: 13rem; 
+}
+
+.subTitle {
+    font-size: 2.5rem;
+    color: $white;
+    margin-top: 7rem;
+}
+
+.senaiLogo {
+    width: 15rem;
+    height: 3.5rem;
+    margin-top: 5rem;
+}
+
+@media (max-width: 800px) {
+    .left-container {
+        display: none;
+    }
+}

@@ -1,0 +1,50 @@
+@import "_global";
+
+.finishing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 50%;
+  top: 30vh;
+  left: 50vw;
+  font-size: 2rem;
+  font-weight: 500;
+  flex-direction: column;
+
+  .service-subTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $grey-button;
+    color: $white;
+    height: 4rem;
+    width: 38rem;
+    font-size: 3rem;
+    margin: auto;
+  }
+
+  .input-service {
+    border: 2px solid $red;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 1.8rem;
+    height: 3.5rem;
+    width: 38rem;
+    padding-left: 0.5rem;
+  }
+
+  .import-addServices {
+    text-align: center;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}

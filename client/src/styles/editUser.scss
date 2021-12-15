@@ -1,0 +1,104 @@
+@import "_global.scss";
+
+.container-editUser {
+  position: absolute;
+  top: 2rem;
+  left: 110rem;
+}
+
+.select-depto {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+#propsTitle {
+  margin-bottom: 50px;
+  color: white;
+}
+
+.ui-subTitleEDIT {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $grey-button;
+  color: $white;
+  height: 4rem;
+  width: 40rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+}
+
+.radioOpcoes {
+  align-items: center;
+}
+
+.mensagem-edit {
+  text-align: center;
+}
+
+.title-info {
+  background-color: $grey-button;
+  color: $white;
+  width: 40rem;
+  height: 4rem;
+  padding: 0.8rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.opcoes {
+  text-align: center;
+}
+
+.radioOpcoes {
+  text-align: center !important;
+
+  .form-check-input {
+    width: 1.8rem !important;
+    height: 1.8rem !important;
+  }
+}
+
+.input-textED {
+  border: 1px solid black;
+  font-size: 1.6rem;
+  width: 35rem;
+  height: 4rem;
+  margin: 1rem 0;
+}
+
+.btn-Edit {
+  width: 100% !important;
+  height: 40% !important;
+  display: flex !important;
+  margin-bottom: 1rem !important;
+  padding: 1rem !important;
+  font-size: 1.4rem !important;
+  flex-direction: column !important;
+  border-radius: 20px !important;
+}
+
+.btn-goBack {
+  width: 40rem;
+  height: 3.4rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 1rem;
+  color: $white;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  background-color: $red !important;
+  border: none !important;
+
+  &:hover {
+    background-color: #ba181b;
+  }
+
+  &:hover {
+    background-color: rgb(139, 10, 10) !important;
+  }
+}

@@ -1,0 +1,86 @@
+@import "_global";
+
+.container {
+  position: absolute;
+  top: 20rem;
+  left: 45rem;
+}
+
+.text-request {
+  text-align: center;
+}
+
+.teste {
+  color: $red;
+}
+
+.btns-request {
+  display: flex !important;
+  margin: auto !important;
+  justify-content: center !important;
+  width: 45rem !important;
+  margin-bottom: 3rem !important;
+
+  .btn-request {
+    height: 5rem !important;
+    width: 100% !important;
+    font-size: 1.6rem !important;
+    border: none !important;
+    background-color: $grey !important;
+    color: #000 !important;
+    transition: 0.5s !important;
+
+    &:hover {
+      background-color: $grey-button !important;
+      color: $white !important;
+    }
+
+    &:first-child {
+      margin-right: 5rem !important;
+    }
+  }
+}
+
+.avaliacao-request {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem auto;
+  font-weight: bold;
+}
+
+.table-request {
+  width: 100%;
+  height: 10rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.detailsForm {
+  font-size: 1.6rem !important;
+  background-color: $grey-button !important;
+  padding: 1rem !important;
+  border-radius: 8px !important;
+  margin-top: 1rem;
+  border: none !important;
+  transition: 0.5s !important;
+
+  &:nth-child(2) {
+    margin-right: 0.5rem !important;
+  }
+
+  &:first-child {
+    margin-right: 0.5rem;
+  }
+
+  &:hover {
+    background-color: $grey !important;
+    color: black !important;
+  }
+}
+
+.back-request {
+  background-color: $red !important;
+  border: none !important;
+  font-size: 1.6rem !important;
+  width: 8rem !important;
+}

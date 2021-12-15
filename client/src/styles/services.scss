@@ -1,0 +1,123 @@
+@import "_global";
+
+.container-Services {
+  display: flex;
+  width: 80rem;
+  justify-content: space-between;
+  position: absolute;
+  top: 15vh;
+  left: 35vw;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  .btn-boot {
+    justify-content: space-between !important;
+    width: 180rem !important;
+    display: flex !important;
+    margin: 0 2rem !important;
+    padding: 1rem !important;
+    font-size: 2rem !important;
+    flex-direction: column !important;
+    transition: 0.5s !important;
+    background-color: $grey;
+
+    &:hover {
+      background-color: $grey-button !important;
+      color: $white !important;
+    }
+  }
+}
+.servicesAcoes {
+  display: flex;
+  margin: 3rem 0;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 40%;
+  top: 20vh;
+  left: 34vw;
+  flex-direction: column;
+
+  .title-services {
+    display: flex;
+    width: 45%;
+    justify-content: center;
+    background-color: $grey-button;
+    color: $white;
+    padding: 0.8rem;
+    font-size: 2.7rem;
+  }
+}
+
+.services-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: absolute;
+  width: 78%;
+  top: 33vh;
+  left: 20vw;
+  font-size: 2rem;
+  font-weight: 500;
+  flex-direction: row-reverse;
+
+  .title-services {
+    margin-bottom: 3rem;
+    font-size: 2.7rem;
+    width: 100%;
+    background-color: $grey-button;
+    color: $white;
+    text-align: center;
+  }
+
+  .btn-disable {
+    display: flex !important;
+    margin: 0 0.5rem !important;
+    padding: 0.5rem !important;
+    flex-direction: column !important;
+    transition: 0.5s !important;
+  }
+
+  .btn-edit {
+    display: flex !important;
+    background-color: $grey-button;
+    color: $white !important;
+    margin: 0 2rem !important;
+    font-size: 1.6rem !important;
+    padding: 0.5rem !important;
+    transition: 0.5s !important;
+
+    &:hover {
+      background-color: $grey !important;
+      color: $grey-button !important;
+    }
+  }
+
+  .btn-enable {
+    display: flex !important;
+    margin: 0 2rem !important;
+    padding: 0.5rem !important;
+    flex-direction: column !important;
+    transition: 0.5s !important;
+  }
+
+  .btn-services {
+    background-color: $grey-button;
+    color: $white;
+    width: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: auto !important;
+    margin-top: 4rem !important;
+    border-radius: 1rem;
+    transition: 0.5s !important;
+    margin-bottom: 10rem !important;
+
+    &:hover {
+      background-color: $grey !important;
+      color: $grey-button !important;
+    }
+  }
+}

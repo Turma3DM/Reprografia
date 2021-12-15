@@ -1,0 +1,180 @@
+@import "global";
+
+.content {
+  display: flex;
+  height: 100vh;
+}
+
+.container-userInfo {
+  position: absolute;
+  top: 20rem;
+  left: 110rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.customize {
+  background-color: $blue;
+  width: 100%;
+  color: $white;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-radius: 16px;
+  border: 0;
+  padding: 0.6rem 12.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  &:hover {
+    background-color: $red;
+  }
+
+  .uploud {
+    margin-right: 2rem;
+    font-size: 2rem;
+  }
+}
+
+.input-box {
+  border: 1px solid #363232;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: auto;
+  margin-bottom: 1.8rem;
+  height: 3.5rem;
+  width: 38rem;
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.ui-subTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $grey-button;
+  color: $white;
+  height: 4rem;
+  width: 40rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+}
+
+.btns {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: -2rem;
+}
+
+.ui-button {
+  color: $white;
+  background-color: $red;
+  height: 3rem;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.changeButton {
+  color: $white;
+  background-color: $grey-button;
+  height: 3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #050505;
+  }
+}
+
+.ui-button:nth-child(1) {
+  background-color: $blue;
+
+  &:hover {
+    background-color: #04345c;
+  }
+}
+
+.ui-button:nth-child(2) {
+  &:hover {
+    background-color: #ba181b;
+  }
+}
+
+.select {
+  margin-bottom: 2rem;
+}
+
+.btn-edit-user {
+  width: 38rem;
+  height: 3.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: $blue;
+  color: $white;
+  border-radius: 2rem;
+  transition: 0.5s;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #04345c;
+  }
+}
+
+.btn-back-user {
+  width: 38rem;
+  height: 3.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: $red;
+  color: $white;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #ba181b;
+  }
+}
+
+.userInformation {
+  margin-bottom: 1.5rem;
+}
+
+.select {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  border: solid 1px $grey-button;
+  padding: 0.5rem;
+}
+
+#btn-back-change {
+  width: 40rem;
+}

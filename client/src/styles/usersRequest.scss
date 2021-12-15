@@ -1,0 +1,76 @@
+@import "_global";
+
+.title-usersR {
+  width: 83%;
+  background-color: black;
+  color: $white;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.avaliacao-usersR {
+  font-size: 2.5rem;
+  margin: 2rem auto;
+  font-weight: bold;
+}
+
+.table-usersR {
+  width: 100rem !important;
+  height: 10rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.avaliations {
+  display: flex;
+  justify-content: center;
+
+  .usersR-avaliation {
+    font-size: 1.6rem !important;
+    background-color: $grey-button !important;
+    padding: 0.5rem !important;
+    border-radius: 8px !important;
+    border: none !important;
+    transition: 0.5s !important;
+    margin-top: 0.3rem !important;
+
+    &:first-child {
+      margin-right: 0.5rem;
+    }
+
+    &:hover {
+      background-color: $grey !important;
+      color: black !important;
+    }
+  }
+}
+
+.btns-usersR {
+  display: flex;
+  justify-content: center;
+  width: 30rem;
+  margin: auto;
+
+  .btn-usersR {
+    height: 5rem;
+    width: 100%;
+    font-size: 1.6rem;
+    margin: 2rem auto;
+
+    &:first-child {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.backUsersR {
+  margin: auto !important;
+
+  .back-usersR {
+    background-color: $red !important;
+    border: none !important;
+    font-size: 1.6rem !important;
+    width: 8rem !important;
+    margin-left: 40% !important;
+  }
+}

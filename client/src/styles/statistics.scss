@@ -1,0 +1,102 @@
+@import "_global";
+
+.statistics-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 60%;
+  top: 14%;
+  left: 25%;
+  font-size: 2rem;
+
+  .select-a-date {
+    text-align: center;
+  }
+
+  .statistics-title {
+    background-color: $grey-button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 4rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2.5rem;
+
+    .month-form {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+
+    .input-ano {
+      font-size: 1.8rem;
+      height: 3rem;
+      border: solid 1px $grey-button;
+      padding: 0.5rem;
+    }
+
+    .input-mes {
+      font-size: 1.8rem;
+      border: solid 1px $grey-button;
+      padding: 0.5rem;
+    }
+
+    .button-form {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 5rem;
+
+      .send-date {
+        color: $white;
+        background-color: $red;
+        height: 3rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.5s;
+        width: 25%;
+        border-radius: 5rem;
+
+        &:hover {
+          color: black;
+          background-color: #ba181b;
+        }
+      }
+    }
+  }
+
+  .tables {
+    width: 100%;
+
+    .first-line-div {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .second-line-div {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .title-tables {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      background-color: $grey-button;
+      color: $white;
+      padding: 0.8rem;
+      font-size: 2rem;
+    }
+  }
+}

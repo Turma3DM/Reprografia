@@ -1,0 +1,49 @@
+@import '../../styles/global';
+
+.navbar {
+  display: none !important;
+}
+
+header {
+  background-color: $red;
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: $white;
+
+  .icon {
+    margin: 0 1rem;
+    cursor: pointer;
+
+    &:hover {
+      color: #04345c;
+    }
+  }
+}
+
+@media (min-width: 1381px) and (max-width: 1400px) {
+  header {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 1380px) {
+  header {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+}
