@@ -37,7 +37,8 @@ module.exports = function (app) {
   // Criando um serviço especificando o tipo (pode ser ct ou ca)
   app.post("/service/type=:type",
     [
-      authJwt.validateToken, authJwt.isAdmin
+      authJwt.validateToken, 
+      authJwt.isAdmin
     ],
     controller.servicosPost
   );
@@ -56,7 +57,8 @@ module.exports = function (app) {
   // Rota para ativar/desativar o serviço
   app.put("/service/:id/type=:type/enable=:enable",
     [
-      authJwt.validateToken, authJwt.isAdmin
+      authJwt.validateToken, 
+      authJwt.isAdmin
     ],
     controller.enableOrDisableServico
   );

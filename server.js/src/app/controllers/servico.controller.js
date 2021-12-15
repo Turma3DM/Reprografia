@@ -71,25 +71,48 @@ module.exports = {
     servicosPost: async (req, res) => {
         const { descricao, quantidade, valor_unitario } = req.body;
         const { type } = req.params;
+        let idServico = "";
 
         try {
             if (quantidade !== "" || quantidade !== null) {
-                const create = await service.createServico({ type: type, params: { descricao: descricao, quantidade: quantidade, valor_unitario: valor_unitario } });
 
-                if (create === false) {
-                    return res.json({ status: status.error, message: constants.invalidParameter });
+                const alreadyCreated = await service.findByDesc({
+                    type: type,
+                    descricao: descricao,
+                });
+
+                if (alreadyCreated !== null) {
+                    await service.updateServico({
+                        servico: alreadyCreated,
+                        param: { quantidade, valor_unitario }
+                    });
+                    okMessage = constants.successAtt;
+                    idServico = alreadyCreated.id_servico;
                 }
+                else {
+                    const create = await service.createServico({
+                        type: type,
+                        params: {
+                            descricao: descricao,
+                            quantidade: quantidade,
+                            valor_unitario: valor_unitario
+                        }
+                    });
 
-                okMessage = constants.successCreated;
+                    if (create === false) {
+                        return res.json({ status: status.error, message: constants.invalidParameter });
+                    }
 
+                    okMessage = constants.successCreated;
+                    idServico = create.id_servico;
+                }
                 if (type === "ca") {
                     typeMsg = constants.caMessage;
                 }
                 else if (type === "ct") {
                     typeMsg = constants.ctMessage;
                 }
-
-                const message = typeMsg + create.id_servico + okMessage;
+                const message = typeMsg + idServico + okMessage;
                 return res.status(200).json({ status: status.ok, message: message });
             }
             else {

@@ -53,8 +53,8 @@ module.exports = function (app) {
     );
 
 
-    //   // Alterando quantidade e valor unitário do serviço
-    //   app.put("/depto/:id/",
+    //   // Alterando descrição e departamento de um curso
+    //   app.put("/curso/:id/",
     //     [
     //       authJwt.validateToken,
     //       authJwt.isAdmin
@@ -65,6 +65,6 @@ module.exports = function (app) {
 
     // DELETE
 
-    // Rota para deletar o serviço
-    // app.delete(service/:id/type=:type)
+    // Rota para deletar um curso
+    // app.delete(curso/:id/)
 };

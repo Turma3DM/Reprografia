@@ -53,7 +53,7 @@ module.exports = function (app) {
     );
 
 
-    //   // Alterando quantidade e valor unitário do serviço
+    //   // Alterando descrição de um depto
     //   app.put("/depto/:id/",
     //     [
     //       authJwt.validateToken,
@@ -65,6 +65,6 @@ module.exports = function (app) {
 
     // DELETE
 
-    // Rota para deletar o serviço
-    // app.delete(service/:id/type=:type)
+    // Rota para deletar um departamento
+    // app.delete(service/:id/)
 };

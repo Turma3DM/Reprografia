@@ -42,6 +42,23 @@ module.exports = {
         return serv;
     },
 
+    findByDesc: async ({ type, descricao }) => {
+
+        const servico = await validators.isParameterValid(type);
+
+        if (servico === false) {
+            return false;
+        }
+
+        const serv = await servico.findOne({
+            where: {
+                descricao: descricao,
+            }
+        });
+
+        return serv;
+    },
+
     createServico: async ({ type, params }) => {
 
         const servico = await validators.isParameterValid(type);
