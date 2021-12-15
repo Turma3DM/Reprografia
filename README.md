@@ -1,8 +1,8 @@
 # Sistema reprográfico 📇
 
-[GitHub Front-end](https://github.com/ViictorSR388/reprografia_front-end)
+[Aplicação rodando no AZURE](http://reprografia-senai.eastus.cloudapp.azure.com/)
 | [GitHub Back-end](https://github.com/Squad-Back-End/reprography-nodejs)
-| [Aplicação rodando no AZURE](http://reprografia-senai.eastus.cloudapp.azure.com/)
+| [GitHub Front-end](https://github.com/ViictorSR388/reprografia_front-end)
 _______
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?&style=flat-square&logo=css3&logoColor=white)
