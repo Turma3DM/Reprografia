@@ -178,7 +178,7 @@ Hebert Borges,
 Jaqueline Abreu e
 Sergio Gal.
 
-•	Obrigada(o) pela ajuda na revisão do TCC a esposa do Professor Átila, Mônica Olivi. 
+•	Obrigada(o) pela ajuda na revisão do TCC, Mônica Olivi. 
 
 
 •	Agradecemos a todos da Escola SENAI Suíço-Brasileira "Paulo Ernesto Tolle", por nos proporcionar esse curso, que é de extrema importância para o nosso conhecimento, jamais iremos esquecer dessa unidade esplêndida!
