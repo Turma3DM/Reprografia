@@ -1,0 +1,1233 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "repro",
+    "contact": {}
+  },
+  "host": "localhost:3002",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/registrar": {
+      "post": {
+        "summary": "Registrar (Inserir usuário)",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "Registrar(Inserirusuário)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "parameters": [
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Obtenha o token de acesso na requisição de Login"
+          },
+          {
+            "name": "nif",
+            "in": "formData",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": "Exemplo: 123"
+          },
+          {
+            "name": "senha",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "nome",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "telefone",
+            "in": "formData",
+            "required": true,
+            "type": "integer",
+            "format": "int64",
+            "description": ""
+          },
+          {
+            "name": "depto",
+            "in": "formData",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          },
+          {
+            "name": "email",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "cfp",
+            "in": "formData",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": "Exemplo: 123"
+          },
+          {
+            "name": "admin",
+            "in": "formData",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": "0 = não admin; 1 = admin"
+          },
+          {
+            "name": "image",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/auth": {
+      "get": {
+        "summary": "Retorna as informações do usuário autenticado (login)",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "Auth",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Dados solicitados com sucesso!",
+            "headers": {}
+          },
+          "500": {
+            "description": "JWT invalido",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/usuarios": {
+      "get": {
+        "summary": "Usuarios (Solicitando todos os usuários)",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "Usuarios(Solicitandotodososusuários)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/usuario/{nome}": {
+      "get": {
+        "summary": "Usuario/:nome (Solicitando usuario por nome)",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "Usuario/:nome(Solicitandousuariopornome)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "nome",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/usuario/nif/{nif}": {
+      "get": {
+        "summary": "Usuario/nif/:nif (Solicitando usuario por nif)",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "Usuario/nif/:nif(Solicitandousuariopornif)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "nif",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/usuario/{nif}": {
+      "put": {
+        "summary": "Usuario/:nif (Atualizar Usuário por nif - gerente)",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "Usuario/:nif(AtualizarUsuáriopornif-gerente)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "parameters": [
+          {
+            "name": "nif",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": "Obtenha um nif existente"
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Obtenha o token de acesso na requisição de Login"
+          },
+          {
+            "name": "imagem",
+            "in": "formData",
+            "required": false,
+            "type": "file",
+            "description": ""
+          },
+          {
+            "name": "senha",
+            "in": "formData",
+            "required": false,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "nome",
+            "in": "formData",
+            "required": false,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "telefone",
+            "in": "formData",
+            "required": false,
+            "type": "integer",
+            "format": "int64",
+            "description": ""
+          },
+          {
+            "name": "depto",
+            "in": "formData",
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          },
+          {
+            "name": "cfp",
+            "in": "formData",
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          },
+          {
+            "name": "admin",
+            "in": "formData",
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          },
+          {
+            "name": "email",
+            "in": "formData",
+            "required": false,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "delete": {
+        "summary": "Usuario/:nif (Deletando Usuario por nif - gerente)",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "Usuario/:nif(DeletandoUsuariopornif-gerente)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "nif",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": "Adicione o nif que será delatado"
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Obtenha o token de acesso na requisição de Login"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/pedidos": {
+      "get": {
+        "summary": "Pedidos (solicitando todos os pedidos - gerente)",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "Pedidos(solicitandotodosospedidos-gerente)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/pedido/{id}": {
+      "get": {
+        "summary": "Pedido/:id (solicitando pedido pelo id do pedido)",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "Pedido/:id(solicitandopedidopeloiddopedido)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/pedido/titulo/{pedido}": {
+      "get": {
+        "summary": "Pedido/titulo/:pedido (solicitando pedido pelo titulo do pedido)",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "Pedido/titulo/:pedido(solicitandopedidopelotitulodopedido)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "pedido",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/pedido/detalheid/{id}": {
+      "get": {
+        "summary": "Pedido/detalheid/:id (solicitando pedido pelo id do detalhe do pedido)",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "Pedido/detalheid/:id(solicitandopedidopeloiddodetalhedopedido)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/pedido/nif/{nif}": {
+      "get": {
+        "summary": "Pedido/:nif (solicitando pedido por NIF do usuário que fez aquele pedido)",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "Pedido/:nif(solicitandopedidoporNIFdousuárioquefezaquelepedido)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "nif",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/servicos": {
+      "get": {
+        "summary": "Servicos (solicitando todos os serviços - gerente)",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "Servicos(solicitandotodososserviços-gerente)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/servicos/{id}": {
+      "put": {
+        "summary": "Servicos/:id (Alterando quantidade e valor unitário do serviço - gerente)",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "Servicos/:id(Alterandoquantidadeevalorunitáriodoserviço-gerente)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": "Adicione um id de um Serviço exitente "
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Obtenha o token de acesso na requisição de Login"
+          },
+          {
+            "name": "quantidade",
+            "in": "formData",
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          },
+          {
+            "name": "valor_unitario",
+            "in": "formData",
+            "required": false,
+            "type": "number",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/estatisticas/mensais/{ano}/{mes}": {
+      "get": {
+        "summary": "Estatisticas Mensais/:ano/:mes (solicitando estatisticas mensais passando ano e mês como parâmetro)",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "EstatisticasMensais/:ano/:mes(solicitandoestatisticasmensaispassandoanoemêscomoparâmetro)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "ano",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          },
+          {
+            "name": "mes",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/estatisticas/quatroMeses": {
+      "get": {
+        "summary": "Estatisticas Quatro Meses (solicitando as estatisticas dos ultimos 3 meses + mês atual)",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "EstatisticasQuatroMeses(solicitandoasestatisticasdosultimos3meses+mêsatual)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/logar": {
+      "post": {
+        "summary": "Logar",
+        "tags": [
+          "USER"
+        ],
+        "operationId": "Logar",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "parameters": [
+          {
+            "name": "emailOrNif",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "senha",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/meuUsuario": {
+      "get": {
+        "summary": "MeuUsuario (solicitando infos do usuario logado)",
+        "tags": [
+          "USER"
+        ],
+        "operationId": "MeuUsuario(solicitandoinfosdousuariologado)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "put": {
+        "summary": "MeuUsuario (Atualizar Usuário - usuário logado)",
+        "tags": [
+          "USER"
+        ],
+        "operationId": "MeuUsuario(AtualizarUsuário-usuáriologado)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "parameters": [
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Obtenha o token de acesso na requisição de Login"
+          },
+          {
+            "name": "imagem",
+            "in": "formData",
+            "required": false,
+            "type": "file",
+            "description": ""
+          },
+          {
+            "name": "nome",
+            "in": "formData",
+            "required": false,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "telefone",
+            "in": "formData",
+            "required": false,
+            "type": "integer",
+            "format": "int64",
+            "description": ""
+          },
+          {
+            "name": "email",
+            "in": "formData",
+            "required": false,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "delete": {
+        "summary": "MeuUsuario (Deletando Usuario - usuario logado)",
+        "tags": [
+          "USER"
+        ],
+        "operationId": "MeuUsuario(DeletandoUsuario-usuariologado)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Deletando a própria"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/mudarSenha": {
+      "put": {
+        "summary": "MudarSenha (Mudando senha - usuario logado)",
+        "tags": [
+          "USER"
+        ],
+        "operationId": "MudarSenha(Mudandosenha-usuariologado)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "parameters": [
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Obtenha o token de acesso na requisição de Login"
+          },
+          {
+            "name": "senhaAntiga",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "senhaNova",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/pedido": {
+      "post": {
+        "summary": "Inserindo um pedido",
+        "tags": [
+          "USER"
+        ],
+        "operationId": "Inserindoumpedido",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "parameters": [
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Obtenha o token de acesso na requisição de Login"
+          },
+          {
+            "name": "centro_custos",
+            "in": "formData",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": "Constraint que vai do 1 ao 8 ",
+            "example": 3,
+            "value": 3
+          },
+          {
+            "name": "titulo_pedido",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": "Titulo que a reprografia irá receber (será o titulo do e-mail)",
+            "example": "Livro XYZ",
+            "value": "Livro XYZ"
+          },
+          {
+            "name": "modo_envio",
+            "in": "formData",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": "Constraint que vai do 1 ao 2",
+            "example": "1",
+            "value": 1
+          },
+          {
+            "name": "curso",
+            "in": "formData",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": "Constraint que vai do 1 ao 4",
+            "example": "2",
+            "value": 2
+          },
+          {
+            "name": "observacoes",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": "",
+            "example": "Nenhuma",
+            "value": "Nenhuma"
+          },
+          {
+            "name": "num_copias",
+            "in": "formData",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": "",
+            "example": "2",
+            "value": 2
+          },
+          {
+            "name": "num_paginas",
+            "in": "formData",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": "",
+            "example": "20",
+            "value": 20
+          },
+          {
+            "name": "acabamento",
+            "in": "formData",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": "Constraint que vai do 1 ao 3",
+            "example": "2",
+            "value": 2
+          },
+          {
+            "name": "tamanho_pagina",
+            "in": "formData",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": "Constraint que vai do 1 ao 5",
+            "example": "2",
+            "value": 2
+          },
+          {
+            "name": "tipos_capa",
+            "in": "formData",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": "Constraint que vai do 1 ao 2",
+            "example": "2",
+            "value": 2
+          },
+          {
+            "name": "tipos_copia",
+            "in": "formData",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": "Constraint que vai do 1 ao 2",
+            "example": "1",
+            "value": 1
+          },
+          {
+            "name": "file",
+            "in": "formData",
+            "required": false,
+            "type": "file",
+            "description": "Arquivo a ser anexado. Pode ser um PDF, DOCX ou XLSX"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/avaliacao/{id}": {
+      "put": {
+        "summary": "Atualizar avaliação",
+        "tags": [
+          "USER"
+        ],
+        "operationId": "Atualizaravaliação",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": "Insira um id de um Pedido existente"
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Obtenha o token de acesso na requisição de Login"
+          },
+          {
+            "name": "id_avaliacao_pedido",
+            "in": "formData",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "exemple":0,
+            "description": "0 = não avaliado, 1 = Atendeu, 2 = Não atendeu"
+          },
+          {
+            "name": "avaliacao_obs",
+            "in": "formData",
+            "required": false,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/detPedido/{id}": {
+      "get": {
+        "summary": "DetPedido/:id (solicitando detalhes do pedido por id do pedido)",
+        "tags": [
+          "USER"
+        ],
+        "operationId": "DetPedido/:id(solicitandodetalhesdopedidoporiddopedido)",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/esqueceuSenha": {
+      "post": {
+        "summary": "Esqueci a senha",
+        "tags": [
+          "USER"
+        ],
+        "operationId": "Esqueciasenha",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "parameters": [
+          {
+            "name": "mail",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/resetarSenha": {
+      "post": {
+        "summary": "Resetar Senha",
+        "tags": [
+          "USER"
+        ],
+        "operationId": "ResetarSenha",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "description": "Insira as informações enviadas no seu email",
+        "parameters": [
+          {
+            "name": "email",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "token",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "senha",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "senha2",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "ADMIN"
+    },
+    {
+      "name": "USER"
+    }
+  ]
+}
