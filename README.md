@@ -185,7 +185,7 @@ Sergio Gal.
 •	Obrigada(o) pela ajuda na revisão do TCC Mônica Olivi. 
 
 
-•	Agradecemos a todos da Escola SENAI Suíço-Brasileira "Paulo Ernesto Tolle", por nos proporcionar esse curso, que é de extrema importância para o nosso conhecimento, jamais iremos esquecer dessa unidade esplêndida!
+•	Agradecemos a todos da Escola SENAI Suíço-Brasileira "Paulo Ernesto Tolle", por nos proporcionar esse curso, que é de extrema importância para o nosso conhecimento, jamais iremos esquecer dessa unidade esplêndida!!
 
 
 
