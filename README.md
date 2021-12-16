@@ -188,4 +188,4 @@ Sergio Gal.
 •	Agradecemos a todos da Escola SENAI Suíço-Brasileira "Paulo Ernesto Tolle", por nos proporcionar esse curso, que é de extrema importância para o nosso conhecimento, jamais iremos esquecer dessa unidade esplêndida!
 
 
-.
+
