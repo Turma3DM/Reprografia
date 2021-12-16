@@ -169,7 +169,7 @@ ____________________
 
 
 #### ❣ Projeto realizado pela turma 3DM - Desenvolvimento de Sistemas (Manhã) 
-TCC - Trabalho de Conclusão de Curso - Dez/2021.
+TCC - Trabalho de Conclusão de Curso - Dez/2021. 
 
 
 #### ❤ Agradecimentos Especiais: 
