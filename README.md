@@ -15,7 +15,7 @@ _______
 
 ### SENAI Suíço-Brasileira "Paulo Ernesto Tolle"
 
-Sistema que visa agilizar as solicitações reprográficas da escola SENAI Suíço-Brasileira "Paulo Ernesto Tolle" com o intuito de deixar o processo mais automatizado, rápido e eficiênte. 
+Sistema que visa agilizar as solicitações reprográficas da escola SENAI Suíço-Brasileira "Paulo Ernesto Tolle" com o intuito de deixar o processo mais automatizado, rápido e eficiênte.. 
 
 ### ⚠ Problemas observados:
 ____________________
