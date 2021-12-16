@@ -1,4 +1,4 @@
-# Sistema reprográfico 📇 .
+# Sistema reprográfico 📇 
 
 [**Aplicação rodando no AZURE**](http://reprografia-senai.eastus.cloudapp.azure.com/)
 | [GitHub Back-end](https://github.com/Squad-Back-End/reprography-nodejs)
